@@ -12,5 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'Welcome';
 });
+
+Route::get('/usuarios',function(){
+    return  'Usuarios';
+});
+
+Route::get('/usuarios/{id}',function($id){
+    return 'Datos del usuario: '.$id;
+})->where('id','[0-9]+');
+
+Route::get('/usuarios/{id}/edit',function($id){
+    return 'Editar datos usuario: '.$id;
+})->where('id','[0-9]+');

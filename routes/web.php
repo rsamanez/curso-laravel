@@ -15,14 +15,10 @@ Route::get('/', function () {
     return 'Welcome';
 });
 
-Route::get('/usuarios',function(){
-    return  'Usuarios';
-});
+Route::get('/usuarios','UserController@index');
 
-Route::get('/usuarios/{id}',function($id){
-    return 'Datos del usuario: '.$id;
-})->where('id','[0-9]+');
+Route::get('/usuarios/{id}','UserController@show')->where('id','[0-9]+');
 
-Route::get('/usuarios/{id}/edit',function($id){
-    return 'Editar datos usuario: '.$id;
-})->where('id','[0-9]+');
+Route::get('/usuarios/{id}/edit','UserController@edit')->where('id','[0-9]+');
+
+Route::get('/saludos/{name}/{nickname?}','WelcomeController');

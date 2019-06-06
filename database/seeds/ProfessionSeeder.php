@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
+use App\Models\Profession;
+//use Illuminate\Support\Facades\DB;
 
 class ProfessionSeeder extends Seeder
 {
@@ -9,7 +10,7 @@ class ProfessionSeeder extends Seeder
      * Run the database seeds.
      *
      * @return void
-     */
+
     public function run()
     {
 
@@ -25,4 +26,18 @@ class ProfessionSeeder extends Seeder
             'title' => 'Web Developer',
         ]);
     }
+     **/
+     public function run()
+     {
+         Profession::create([
+             'title' => 'Back-End Developer',
+         ]);
+         Profession::create([
+             'title' => 'Front-End Developer',
+         ]);
+         Profession::create([
+             'title' => 'Web Developer',
+         ]);
+
+     }
 }

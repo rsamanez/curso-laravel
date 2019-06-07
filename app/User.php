@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Models\Profession;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -26,4 +27,23 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    protected $casts = [
+        'is_admin' => 'boolean',
+    ];
+
+    public static function findByEmail($email)
+    {
+        return static::where(compact('email'))->first();
+    }
+
+    public function profession()  // this will search the field profession + _id
+    {   // if your field have a different name then use the second argument:
+        //return $this->belongsTo(Profession::class,'profession_id');
+        return $this->belongsTo(Profession::class);
+    }
+    public function isAdmin()
+    {
+        return $this->is_admin;
+    }
 }

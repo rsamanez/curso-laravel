@@ -20,6 +20,11 @@ class UserSeeder extends Seeder
            'profession_id' => $professionId,
         ]);
 
+        // loading 20 ramdon users
+        factory(User::class,20)->create([
+            'profession_id' => $professionId
+        ]);
+
         $professionId = Profession::where(['title' => 'Front-End Developer'])->value('id');
         User::create([
             'name' => 'Luis Pumaricra',
@@ -28,12 +33,22 @@ class UserSeeder extends Seeder
             'profession_id' => $professionId,
         ]);
 
+        // loading 20 ramdon users
+        factory(User::class,20)->create([
+            'profession_id' => $professionId
+        ]);
+
         $professionId = Profession::where(['title' => 'Web Developer'])->value('id');
         User::create([
             'name' => 'Rommel Samanez',
             'email' => 'rsamanez@proande.com',
             'password' => bcrypt('laravel'),
             'profession_id' => $professionId,
+        ]);
+
+        // loading 20 ramdon users
+        factory(User::class,20)->create([
+            'profession_id' => $professionId
         ]);
     }
 }

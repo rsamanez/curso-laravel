@@ -29,3 +29,5 @@ https://styde.net/usando-eloquent-orm-de-forma-interactiva-con-tinker/
 https://styde.net/manejo-de-atributos-en-eloquent-orm-solucion-a-massassignmentexception/
 
 https://styde.net/relaciones-con-el-orm-eloquent/
+
+https://styde.net/generar-registros-con-model-factories-en-laravel/

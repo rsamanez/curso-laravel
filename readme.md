@@ -24,6 +24,8 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 https://styde.net/laravel-5/
 
+https://styde.net/introduccion-a-eloquent-el-orm-del-framework-laravel/
+
 https://styde.net/usando-eloquent-orm-de-forma-interactiva-con-tinker/
 
 https://styde.net/manejo-de-atributos-en-eloquent-orm-solucion-a-massassignmentexception/

@@ -33,3 +33,11 @@ https://styde.net/manejo-de-atributos-en-eloquent-orm-solucion-a-massassignmente
 https://styde.net/relaciones-con-el-orm-eloquent/
 
 https://styde.net/generar-registros-con-model-factories-en-laravel/
+
+   
+   
+## Módulo CRUD de usuarios: listado básico y detalles
+
+En esta tercera parte comenzaremos el desarrollo práctico de un módulo CRUD de usuarios con Laravel, para ello nos apoyaremos en el navegador pero también en el desarrollo con pruebas automatizadas.
+
+https://styde.net/modulo-de-usuarios-con-laravel/
